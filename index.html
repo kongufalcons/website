@@ -36,7 +36,28 @@
   .logo {
     width: auto;
   }
+  .btn-right {
+           float: right;
+           background-color: #f38732;
+           color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-right:hover {
+            background-color: #ff4000;
+        }
 </style>
+<script>
+  function showMessage() {
+      alert("In progress..");
+  }
+</script>
 </head>
 <body>
   <!--header section start -->
@@ -56,10 +77,10 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <!-- <li class="nav-item">
-                <a class="nav-link" href="services.html">Privacy Policy</a>
+                <a class="nav-link" href="team.html">Donate</a>
               </li> -->
               <!-- <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
+                <a class="nav-link" href="services.html">Privacy Policy</a>
               </li> -->
             </ul>
           </div>
@@ -69,8 +90,15 @@
           <p class="banner_text">The Kongu Falcons initiative was launched in December 2019 with the goal of bringing together educated professionals from the underprivileged community to create a positive social impact.</p>
         </div>
       </div>
-      <div class="header_right" style="margin-top: 120px;">
-        <img src="images/banner-img.png" class="banner_img">
+      <div class="header_right">
+        <div style="width: 100%; text-align: right; padding-top: 40px; padding-bottom: 25px; padding-right: 30px; ">
+          <button class="btn-right" style="padding: 10px;" onclick="showMessage()">Donate</button>
+        </div>
+
+        <div style="margin-top: 120px;">
+          <img src="images/banner-img.png" class="banner_img">
+        </div>
+        
       </div>
     </div>
     <!--header section end -->
@@ -126,7 +154,7 @@
           <div class="col-lg-3 col-sm-6">
             <div class="box_main" style="padding: 5px;">
               <div class="icon_1"><img src="images/icon-4.png"></div>
-              <h3 class="accounting_text">Networking and Community Support</h3>
+              <h3 class="accounting_text">Networking and Support</h3>
               <p class="lorem_text">We foster a strong professional network, creating opportunities for members to collaborate, share knowledge, and grow together</p>
             
             </div>
